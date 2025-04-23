@@ -1,0 +1,162 @@
+/* Add these styles to your existing styles.css file */
+
+.hero {
+    background-color: var(--light-pink);
+    padding: 4rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    color: var(--dark-green);
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+}
+
+.hero h2 {
+    font-size: 1.8rem;
+    color: var(--sage-green);
+    margin-bottom: 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.cta-button {
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.cta-button.primary {
+    background-color: var(--sage-green);
+    color: white;
+}
+
+.cta-button.secondary {
+    background-color: white;
+    color: var(--sage-green);
+    border: 2px solid var(--sage-green);
+}
+
+.featured-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 4rem 0;
+}
+
+.feature-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card i {
+    font-size: 2.5rem;
+    color: var(--sage-green);
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    color: var(--dark-green);
+    margin-bottom: 1rem;
+}
+
+.learn-more {
+    color: var(--sage-green);
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.benefit-item {
+    text-align: center;
+}
+
+.benefit-item i {
+    font-size: 2rem;
+    color: var(--sage-green);
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: var(--sage-green);
+    color: white;
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.footer-links {
+    margin-bottom: 1.5rem;
+}
+
+.footer-links a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+}
+
+.footer-contact {
+    margin-bottom: 1.5rem;
+}
+
+.footer-contact p {
+    margin: 0.5rem 0;
+}
+
+.footer-legal {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
